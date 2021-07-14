@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../eclipse-workspace"
+		},
+		{
+			"path": "../../Downloads/instagram-dio-master"
+		},
+		{
+			"path": "../../Downloads/netflix-clone-master"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "netflix-clone"
+	}
+}

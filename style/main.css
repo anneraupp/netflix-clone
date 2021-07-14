@@ -1,0 +1,469 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+    background: var(--preto);
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-superior{
+    display: flex;
+}
+/* botao navegar */
+.navegar{
+    display: none;
+}
+
+.negrito{
+    font-weight: bolder;
+}
+
+span.emoji {
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 1;
+    margin-right: 15px;
+  }
+
+.dropbtn {
+    background-color:var(--preto);
+    color: #aaa;
+    font-size: 12px;
+    border: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--preto);
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #aaa;
+    font-size: 12px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: var(--preto);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: var(--preto);
+}
+
+/* dropdown usuario*/
+.dropbtn-right{
+    background-color:var(--preto);
+    color: white;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+    transform: scale(1.5);
+    
+}
+
+.dropdown-right {
+    float: right;
+    position: relative;
+    display: block;
+}
+
+
+.dropdown-content-right {
+    margin-top: 2px;
+    display: none;
+    position: absolute;
+    background-color: var(--preto);
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    
+    
+  }
+
+.dropdown-content-right .submenu{
+    border: 1px rgba(255,255,255,0.1) solid;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-right a {
+    color: #aaa;
+    font-size: 12px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content-right a:hover {
+    background-color: var(--preto);
+    text-decoration: underline ;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-right:hover .dropdown-content-right {
+    display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-:right .dropbtn {
+    background-color: var(--preto);
+}
+
+/*search*/
+
+
+.search-box {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.search-box input {
+    border: 0;
+    background-color: var(--preto);
+    padding: 8px;
+    border: none;
+    height: 15px;
+    font-size: 14px;
+  }
+  
+  .search-box:hover > input{
+    display: inline-block;
+    width: 170px;
+    outline: none;
+    height: 30px;
+    color: var(--preto);
+    padding: 0;
+    transition: padding 0.6s ease-in-out, width 0.6s ease-in-out;;
+    border: 1px solid #aaa;
+  }
+
+/*searh 2*/
+
+.swrap{
+    height: 90%;
+    float:left;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.search-container { 
+    float:left;
+    display: flex;
+    width: 60px;
+    margin-top: 8px;
+    padding: 10px;
+    transition: width .2s;
+    overflow: hidden;
+    transform: scale(0.8);
+}
+
+.search-container:hover{
+    width: 300px;
+    border: none;
+    
+}
+
+
+.search-input {
+  flex: 1;
+  display: flex;
+  
+}
+
+.search-input input {
+  flex: 1;
+  background-clip: padding-box;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  margin-left: 0px;
+  background-color: var(--preto);
+  font-size: 14px;
+}
+
+/*search2*/
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .container2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+header .container2 i{
+    margin-right: 30px;
+    cursor: pointer;
+    margin-left: 0;
+    transform: scale(1.3);
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px; 
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background:  linear-gradient(to bottom, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('/img/loki.jpg');
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 20px;
+    color:rgba(255,255,255,0.8);
+    line-height: 25px;
+    width: 50%;
+}
+ 
+.filme-principal .titulo{
+    font-size: 80px;
+    margin-top: 5%;
+    font-family: 'Teko', sans-serif;
+}
+
+.container{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 5%;
+    
+}
+
+.botao{
+    background-color:white;
+    border: 0;
+    padding: 15px 30px;
+    color: var(--preto);
+    font-size: 25px;
+    max-width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao2{
+    background-color:rgba(255,255,255,0.3);
+    border: 0;
+    padding: 15px 30px;
+    color: white;
+    font-size: 25px;
+    margin-left: 15px;
+    max-width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: rgba(255,255,255,0.8);
+    border: 0;
+    color: var(--preto);
+}
+
+.botao2:hover{
+    background-color:rgba(255,255,255,0.1);
+    border: 0;
+    color: white;
+}
+
+.botao, .botao2 i{
+    margin-right: 8px;
+}
+
+
+/*owl-carousel*/
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
+
+.categoria{
+    margin-top: 20px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#seta_onhover_icon{
+    visibility: hidden;
+}
+#seta_icon:hover ~ #seta_onhover_icon{
+    visibility: visible;
+    font-size: 12px;
+    margin-left: 10px;
+    color: #aaa;
+}
+
+
+/*rodapé*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    width: 1000px;
+    justify-content: center;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    width: 60%;
+    
+
+}
+.rede-social{
+    background-color:var(--preto);
+    border: 0;
+    color: rgba(255,255,255,0.3);
+    font-size: 30px;
+    padding: 15px;
+    cursor: pointer;
+    
+}
+
+.rede-social:hover{
+    color: white;
+}
+
+.cards{
+    
+    display: grid;
+
+}
+.card,  a{
+    margin-left: 10px;
+    padding: 10px 0;
+
+    color: rgba(255,255,255,0.3);
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.card, a:hover{
+    color: white;
+  }
+
+.caixa{
+    
+    border: 0;
+    margin-left: 10px;
+    padding: 20px 0;
+
+}
+
+.caixa .botao3{
+    border: 1px solid rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.3);
+    background-color: var(--preto);
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 10px ;
+    cursor: pointer;
+}
+
+.caixa .botao3:hover{
+    color: white;
+}
+
+.credito{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    padding: 10px 0;
+}
+
+.credito p{
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+}
