@@ -64,6 +64,7 @@
     .filme-principal{
         height: 300px;
         background-size: cover;
+        background: url('/img/loki.jpg');
     }
 
     .filme-principal .titulo{
