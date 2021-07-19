@@ -267,10 +267,9 @@ header nav a:hover{
 .filme-principal{
     font-size: 16px;
     background: url('/images/background.png');
-
-    height: 500px;
+    background-color: #E50914;
+    height: 600px;
     background-size: cover;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -298,6 +297,7 @@ header nav a:hover{
 }
 
 .filme-principal .container{
+    
     width: 70%;
 }
 
