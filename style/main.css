@@ -225,6 +225,9 @@ header .container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 header .container2{
@@ -266,14 +269,13 @@ header nav a:hover{
 /*filme principal*/
 .filme-principal{
     font-size: 16px;
-    background: url('/images/background.png');
-    background-color: #E50914;
+    background: url("/images/background.png") no-repeat;
     height: 600px;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    
+    
 }
 
 .filme-principal .descricao{
@@ -283,22 +285,21 @@ header nav a:hover{
     color:rgba(255,255,255,0.8);
     line-height: 25px;
     width: 50%;
+    background-color: transparent;
 }
  
 .filme-principal .titulo{
     font-size: 80px;
-    margin-top: 5%;
+    margin-top: 10%;
     font-family: 'Teko', sans-serif;
 }
 
-.container{
+.filme-principal .container{
+    width: 70%;
     margin-left: 30px;
     margin-right: 10px;
-}
-
-.filme-principal .container{
     
-    width: 70%;
+    
 }
 
 .botoes{
@@ -361,6 +362,12 @@ header nav a:hover{
 
 .carrosel-filmes{
     margin-top: 10px;
+}
+
+.container {
+    margin-left: 30px;
+    margin-right: 10px;
+    background-color: transparent;
 }
 
 .categoria{
